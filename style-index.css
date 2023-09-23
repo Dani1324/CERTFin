@@ -313,6 +313,15 @@ iframe{
     width: 90vw;
   }
 
+  .fade {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, #0F164C, rgba( 0, 0, 0, 0));
+    width: 100vw;
+    height: 10vh;
+    z-index: 10;
+  }
+
   /* Introduction section */
   .introduction {
     display: block;
