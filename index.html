@@ -74,8 +74,8 @@
         </div>
       </div>
       <!-- Add Navigation -->
-      <div class="swiper-button-prev desktop"></div>
-      <div class="swiper-button-next desktop"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 
@@ -169,10 +169,13 @@
           pagination: {
             el: ".swiper-pagination",
           },
-          touchEvents: true,
-          draggable: true,
-          simulateTouch: true,
-          allowTouchMove: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          keyboard: false,
+          simulateTouch: false,
+          allowTouchMove: false,
         });
       }
   </script>
