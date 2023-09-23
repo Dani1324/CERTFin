@@ -356,7 +356,7 @@ iframe{
   }
 
   .swiper-slide {
-    width: 90vw;
+    width: 80vw;
   }
 
   .swiper-slide iframe {
@@ -402,13 +402,13 @@ iframe{
     padding-top: 2rem;
     border-top: 0.06rem solid #0F164C;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    align-content: center;
   }
 
   .links div:last-of-type{
     margin-left: 0%;
-    justify-content: space-between;
+    justify-content: initial;
   }
 
   .links div:last-of-type img{
