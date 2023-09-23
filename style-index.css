@@ -41,6 +41,13 @@ iframe{
   border: 0.07rem solid #969FFA;
 }
 
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: block;
+}
 
 /* Header */
 .header {
@@ -159,6 +166,7 @@ iframe{
   color: #0F164C;
   padding-top: 6rem;
   text-align: center;
+  max-width: 100vw;
 }
 
 .partner p {
@@ -222,15 +230,82 @@ iframe{
     background-image: radial-gradient(100% 12% at 50% 1rem, #0E688C, #0F164C),linear-gradient(0deg, #000 0%, #000 100%);
   }
 
+  .mobile {
+    display: block;
+  }
+  
+  .desktop {
+    display: none;
+  }
+
 
   /* Header */
   .header {
-    width: calc(100vw - 12rem);
-    padding: 1rem 1.5rem;
+    width: calc(100vw - 6rem);
+    padding: 0.5rem 3rem;
+    backdrop-filter: blur(0.3rem);
+    -webkit-backdrop-filter: blur(0.3rem);
+    background-color: rgba( 255, 255, 255, 0.1);
   }
 
   .header .logo {
     padding: 0;
     height: 2.5rem;
+  }
+
+
+  /* Hero */
+  .hero {
+    position: relative;
+    height: 100vh;
+    margin-bottom: 10rem;
+  }
+
+
+  /* Partner section */
+  .partner {
+    padding-top: 6rem;
+  }
+
+  .partner .policies{
+    padding: 4rem 0 3rem 0;
+  }
+
+  .links {
+    display: block;
+    width: 70vw;
+    margin: 3rem auto 0 auto;
+  }
+
+  .links div:first-of-type{
+    width: 100%;
+    border: 0;
+  }
+
+  .links div:first-of-type img{
+    height: 2rem;
+    float: initial;
+    margin: 1rem 1rem;
+  }
+
+  .links div:last-of-type{
+    border-top: 0.06rem solid #0F164C;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .links div:last-of-type{
+    width: 100%;
+    margin-left: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .links div:last-of-type img{
+    height: 2.4rem;
+    margin: 1.3rem 0;
+    padding-right: 3rem;
   }
 }
