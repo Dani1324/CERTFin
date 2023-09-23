@@ -230,6 +230,28 @@ iframe{
     background-image: radial-gradient(100% 12% at 50% 1rem, #0E688C, #0F164C),linear-gradient(0deg, #000 0%, #000 100%);
   }
 
+  h2{
+    line-height: 1.3;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  h2 br{
+    display: none;
+  }
+  
+  p{
+    line-height: 1.3;
+    font-size: 1rem;
+    font-weight: 100;
+    opacity: 0.8;
+  }
+  
+  iframe{
+    border-radius: 1.5rem;
+    border: 0.07rem solid #969FFA;
+  }
+
   .mobile {
     display: block;
   }
@@ -241,11 +263,11 @@ iframe{
 
   /* Header */
   .header {
-    width: calc(100vw - 6rem);
-    padding: 0.5rem 3rem;
+    width: 80vw;
+    padding: 0.3rem 10vw 0.3rem 10vw;
     backdrop-filter: blur(0.5rem);
     -webkit-backdrop-filter: blur(0.5rem);
-    background-color: rgba( 255, 255, 255, 0.1);
+    background-color: rgba( 17, 34, 86, 0.3);
   }
 
   .header .logo {
@@ -280,79 +302,61 @@ iframe{
   }
 
 
-
-
-
   /* Video section */
   .video {
     width: 90vw;
-    justify-content: center;
     padding: 0 5vw 6rem 5vw;
     background: linear-gradient(0deg, rgba( 0, 0, 0, 100), rgba( 0, 0, 0, 0));
   }
 
   .video .iframe {
-    width: 70vw;
-    aspect-ratio: 16/9;
-    margin: 0 auto;
+    width: 90vw;
   }
-
-  .video h2 {
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-
-  .video p {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
 
   /* Introduction section */
   .introduction {
-    display: flex;
-    align-items: center;
-    width: calc(100vw - 20rem);
-    background-color: #000;
-    padding: 5rem 10rem 10rem 10rem;
+    display: block;
+    width: 90vw;
+    padding: 0rem 5vw 8rem 5vw;
   }
 
   .introduction img{
     width: 40%;
     height: auto;
-    margin-right: 5%;
+    margin: 0 30% 2rem 30%;
   }
 
   .introduction h2{
-    margin-bottom: 1rem;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+    text-align: center;
   }
+
 
   /* Slider */
   .slider {
-    background-color: #000;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
+    position: relative;
   }
 
   .slider h2 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
-    text-align: center;
+    width: 90vw;
+    padding: 0 5vw;
   }
 
   .slider p {
-    text-align: center;
+    width: 90vw;
+    padding: 0 5vw;
   }
 
   .swiper {
-    width: 100%;
-    padding-top: 2rem;
+    width: 100vw;
+    padding-top: 1rem;
   }
 
   .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 63rem;
+    width: 90vw;
   }
 
   .swiper-slide iframe {
@@ -361,18 +365,6 @@ iframe{
     aspect-ratio: 16/9;
     border-radius: 1.5rem;
   }
-
-  .swiper-button-prev, .swiper-button-next {
-    color: #fff;
-  }
-
-
-
-
-
-
-
-
 
 
   /* Partner section */
@@ -420,7 +412,7 @@ iframe{
   }
 
   .links div:last-of-type img{
-    height: 2.4rem;
+    height: 1.5rem;
     margin: 1.3rem 0;
     padding: 0 1rem;
   }

@@ -74,8 +74,8 @@
         </div>
       </div>
       <!-- Add Navigation -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev desktop"></div>
+      <div class="swiper-button-next desktop"></div>
     </div>
   </div>
 
@@ -131,27 +131,53 @@
       });
 
       // Inizializza Swiper
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        keyboard: true,
-        draggable: false,
-        touchable: false,
-      });
+      const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+      if (width > 1025) {
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          keyboard: true,
+          draggable: false,
+          touchable: false,
+        });
+      }
+      else {
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 0.7,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          keyboard: true,
+          draggable: false,
+          touchable: false,
+        });
+      }
   </script>
 </body>
 </html>
