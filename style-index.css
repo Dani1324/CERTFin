@@ -217,6 +217,12 @@ iframe{
 
 @media (max-width: 1025px) {
 
+  /* ! General style of the website */
+  body {
+    background-image: radial-gradient(100% 12% at 50% 1rem, #0E688C, #0F164C),linear-gradient(0deg, #000 0%, #000 100%);
+  }
+
+
   /* Header */
   .header {
     width: calc(100vw - 12rem);
@@ -225,6 +231,6 @@ iframe{
 
   .header .logo {
     padding: 0;
-    height: 2rem;
+    height: 2.5rem;
   }
 }
