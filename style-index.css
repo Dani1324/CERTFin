@@ -1,8 +1,12 @@
 /* ! General style of the website */
 body {
-  font-family: 'Nunito';
-  background-position: 0px 0px,0px 0px,0px 0px;
-  background-image: radial-gradient(60% 99vh at 50% 1rem, #0E688C, #0F164C),linear-gradient(0deg, #000 0%, #000 100%);
+  font-family: "Nunito";
+  background-position:
+    0px 0px,
+    0px 0px,
+    0px 0px;
+  background-image: radial-gradient(60% 99vh at 50% 1rem, #0e688c, #0f164c),
+    linear-gradient(0deg, #000 0%, #000 100%);
   right: 0;
   top: 0;
   padding: 0;
@@ -17,7 +21,7 @@ a {
 }
 
 button {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   cursor: pointer;
   color: #000074;
   white-space: nowrap;
@@ -38,7 +42,7 @@ p {
 
 iframe {
   border-radius: 1.5rem;
-  border: 0.07rem solid #969FFA;
+  border: 0.07rem solid #969ffa;
 }
 
 .mobile {
@@ -67,7 +71,6 @@ iframe {
   height: 2.6rem;
 }
 
-
 /* Hero section */
 .hero {
   position: relative;
@@ -95,19 +98,18 @@ iframe {
 .fade {
   position: absolute;
   bottom: 0;
-  background: linear-gradient(0deg, #0F164C, transparent);
+  background: linear-gradient(0deg, #0f164c, transparent);
   width: 100vw;
   height: 20vh;
   z-index: 10;
 }
-
 
 /* Video section */
 .video {
   width: 100vw;
   justify-content: center;
   padding-bottom: 6rem;
-  background: linear-gradient(0deg, rgba( 0, 0, 0, 100), rgba( 0, 0, 0, 0));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0));
 }
 
 .video .iframe {
@@ -126,7 +128,6 @@ iframe {
   margin-bottom: 3rem;
 }
 
-
 /* Introduction section */
 .introduction {
   display: flex;
@@ -136,13 +137,13 @@ iframe {
   padding: 5rem 10rem 10rem 10rem;
 }
 
-.introduction img{
+.introduction img {
   width: 40%;
   height: auto;
   margin-right: 5%;
 }
 
-.introduction h2{
+.introduction h2 {
   margin-bottom: 1rem;
   font-size: 2.4rem;
 }
@@ -181,15 +182,15 @@ iframe {
   border-radius: 1.5rem;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   color: #fff;
 }
-
 
 /* Partner section */
 .partner {
   background-color: #fff;
-  color: #0F164C;
+  color: #0f164c;
   padding-top: 6rem;
   text-align: center;
   max-width: 100vw;
@@ -199,12 +200,12 @@ iframe {
   opacity: 0.5;
 }
 
-.partner .policies{
+.partner .policies {
   padding: 4rem 0 3rem 0;
   border-bottom: 1px solid white;
 }
 
-.partner .policies a{
+.partner .policies a {
   font-weight: 100;
   opacity: 0.5;
   text-decoration: underline;
@@ -216,25 +217,25 @@ iframe {
   margin: 3rem auto 0 auto;
 }
 
-.links div:first-of-type{
+.links div:first-of-type {
   width: 25%;
-  border-right: 0.06rem solid #0F164C;
+  border-right: 0.06rem solid #0f164c;
   min-width: 15rem;
 }
 
-.links div:first-of-type img{
+.links div:first-of-type img {
   height: 3rem;
   float: left;
   margin: 1rem 0;
 }
 
-.links div:last-of-type{
+.links div:last-of-type {
   width: 75%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.links div:last-of-type{
+.links div:last-of-type {
   width: 71%;
   margin-left: 4%;
   display: flex;
@@ -242,18 +243,17 @@ iframe {
   justify-content: space-between;
 }
 
-.links div:last-of-type img{
+.links div:last-of-type img {
   height: 2.4rem;
   margin: 1.3rem 0;
   padding-right: 3rem;
 }
 
-
 @media (max-width: 1025px) {
-
   /* ! General style of the website */
   body {
-    background-image: radial-gradient(100% 12% at 50% 1rem, #0E688C, #0F164C),linear-gradient(0deg, #000 0%, #000 100%);
+    background-image: radial-gradient(100% 12% at 50% 1rem, #0e688c, #0f164c),
+      linear-gradient(0deg, #000 0%, #000 100%);
   }
 
   h2 {
@@ -265,27 +265,26 @@ iframe {
   h2 br {
     display: none;
   }
-  
+
   p {
     line-height: 1.3;
     font-size: 1rem;
     font-weight: 100;
     opacity: 0.8;
   }
-  
-  iframe{
+
+  iframe {
     border-radius: 1.5rem;
-    border: 0.07rem solid #969FFA;
+    border: 0.07rem solid #969ffa;
   }
 
   .mobile {
     display: block;
   }
-  
+
   .desktop {
     display: none;
   }
-
 
   /* Header */
   .header {
@@ -293,14 +292,13 @@ iframe {
     padding: 0.3rem 10vw 0.3rem 10vw;
     backdrop-filter: blur(0.5rem);
     -webkit-backdrop-filter: blur(0.5rem);
-    background-color: rgba( 17, 34, 86, 0.3);
+    background-color: rgba(17, 34, 86, 0.3);
   }
 
   .header .logo {
     padding: 0;
     height: 2.5rem;
   }
-
 
   /* Hero */
   .hero {
@@ -330,18 +328,17 @@ iframe {
   .fade {
     position: absolute;
     bottom: 0;
-    background: linear-gradient(0deg, #0F164C, rgba( 0, 0, 0, 0));
+    background: linear-gradient(0deg, #0f164c, rgba(0, 0, 0, 0));
     width: 100vw;
     height: 10vh;
     z-index: 10;
   }
 
-
   /* Video section */
   .video {
     width: 90vw;
     padding: 0 5vw 6rem 5vw;
-    background: linear-gradient(0deg, rgba( 0, 0, 0, 100), rgba( 0, 0, 0, 0));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0));
   }
 
   .video .iframe {
@@ -355,17 +352,16 @@ iframe {
     padding: 0rem 5vw 8rem 5vw;
   }
 
-  .introduction img{
+  .introduction img {
     width: 40%;
     height: auto;
     margin: 0 30% 2rem 30%;
   }
 
-  .introduction h2{
+  .introduction h2 {
     font-size: 1.8rem;
     text-align: center;
   }
-
 
   /* Slider */
   .slider {
@@ -401,12 +397,12 @@ iframe {
     border-radius: 1.5rem;
   }
 
-  .swiper-button-prev, .swiper-button-next {
+  .swiper-button-prev,
+  .swiper-button-next {
     color: #fff;
     transform: scale(0.7);
     margin-top: -2vw;
   }
-
 
   /* Partner section */
   .partner {
@@ -441,7 +437,7 @@ iframe {
 
   .links div:last-of-type {
     padding-top: 2rem;
-    border-top: 0.06rem solid #0F164C;
+    border-top: 0.06rem solid #0f164c;
     width: 100%;
     display: block;
     align-content: center;
