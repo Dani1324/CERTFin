@@ -5,7 +5,7 @@ body {
     0px 0px,
     0px 0px,
     0px 0px;
-  background-image: radial-gradient(60% 99vh at 50% 1rem, #0e688c, #0f164c),
+  background-image: radial-gradient(60% 85vh at 50% 1rem, #0e688c, #0f164c),
     linear-gradient(0deg, #000 0%, #000 100%);
   right: 0;
   top: 0;
@@ -74,8 +74,8 @@ iframe {
 /* Hero section */
 .hero {
   position: relative;
-  height: 100vh;
-  margin-bottom: 10rem;
+  height: 86vh;
+  margin-bottom: 3rem;
   overflow-y: hidden;
 }
 
@@ -88,8 +88,8 @@ iframe {
 
 #man-img {
   position: absolute;
-  width: 44vw;
-  margin: 0 28vw;
+  width: 40vw;
+  margin: 0 30vw;
   bottom: 0;
   z-index: 2;
   pointer-events: none;
@@ -102,6 +102,7 @@ iframe {
   width: 100vw;
   height: 20vh;
   z-index: 10;
+  pointer-events: none;
 }
 
 /* Video section */
@@ -306,7 +307,7 @@ iframe {
     height: 166vw;
     width: 100vw;
     overflow: hidden;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     max-height: 100vh;
   }
 
