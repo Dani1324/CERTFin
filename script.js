@@ -59,4 +59,19 @@ if (width > 1025) {
     simulateTouch: false,
     allowTouchMove: false,
   });
-}
+};
+
+var player;
+function iframe(i, id, ev) {
+  // Ottieni i riferimenti agli elementi
+  var poster = document.querySelector(".poster-" + i);
+  var iframe = document.querySelector(".iframe-" + i);
+  var playButton = document.querySelector(".play-button-" + i);
+
+  // Hide the thumbnail and the button
+  poster.style.display = "none";
+  playButton.style.display = "none";
+
+  // Play the video
+  iframe.src += "&autoplay=1";
+};

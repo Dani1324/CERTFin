@@ -42,7 +42,22 @@ p {
 
 iframe {
   border-radius: 1.5rem;
-  border: 0.07rem solid #969ffa;
+}
+
+.iframeButton {
+  position: absolute; 
+  z-index: 3;
+  border: 0.18rem solid #6AC2F9;
+  color: #6AC2F9;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  width: 23rem;
+  height: 4.1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 155%);
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .mobile {
@@ -114,6 +129,7 @@ iframe {
 }
 
 .video .iframe {
+  position: relative;
   width: 70vw;
   aspect-ratio: 16/9;
   margin: 0 auto;
@@ -276,7 +292,20 @@ iframe {
 
   iframe {
     border-radius: 1.5rem;
-    border: 0.07rem solid #969ffa;
+  }
+
+  .iframeButton {
+    border: 0.09rem solid #6AC2F9;
+    color: #6AC2F9;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    width: 11rem;
+    height: 2.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    font-size: 1rem;
+    text-transform: uppercase;
   }
 
   .mobile {
@@ -389,6 +418,7 @@ iframe {
 
   .swiper-slide {
     width: 80vw;
+    position: relative;
   }
 
   .swiper-slide iframe {
