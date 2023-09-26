@@ -1,6 +1,6 @@
 /* ! General style of the website */
 body {
-  font-family: "Nunito";
+  font-family: "Nunito Sans";
   background-position:
     0px 0px,
     0px 0px,
@@ -21,7 +21,7 @@ a {
 }
 
 button {
-  font-family: "Nunito";
+  font-family: "Nunito Sans";
   cursor: pointer;
   color: #000074;
   white-space: nowrap;
