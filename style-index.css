@@ -5,7 +5,7 @@ body {
     0px 0px,
     0px 0px,
     0px 0px;
-  background-image: radial-gradient(60% 85vh at 50% 1rem, #0e688c, #0f164c),
+  background-image: radial-gradient(60% 85vh at 50% 1rem, #0e688c 0%, #0f164c 100% ),
     linear-gradient(0deg, #000 0%, #000 100%);
   right: 0;
   top: 0;
@@ -133,6 +133,7 @@ iframe {
   width: 70vw;
   aspect-ratio: 16/9;
   margin: 0 auto;
+  max-width: 70rem;
 }
 
 .video h2 {
@@ -152,12 +153,13 @@ iframe {
   width: calc(100vw - 20rem);
   background-color: #000;
   padding: 5rem 10rem 10rem 10rem;
+  justify-content: center;
 }
 
 .introduction img {
-  width: 40%;
   height: auto;
-  margin-right: 5%;
+  margin-right: 4rem;
+  width: 20rem;
 }
 
 .introduction h2 {
@@ -392,6 +394,10 @@ iframe {
 
   .introduction h2 {
     font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .introduction p {
     text-align: center;
   }
 
