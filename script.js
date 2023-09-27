@@ -15,51 +15,22 @@ document.querySelectorAll("a.smooth").forEach(function (element) {
 
 // Swiper settings
 const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
-if (width > 1025) {
-  var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    keyboard: true,
-    simulateTouch: false,
-    allowTouchMove: false,
-  });
-} else {
-  var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    keyboard: false,
-    simulateTouch: false,
-    allowTouchMove: false,
-  });
-};
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  keyboard: true,
+  simulateTouch: false,
+  allowTouchMove: false,
+});
 
 var player;
 function iframe(i, id, ev) {
