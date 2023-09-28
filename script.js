@@ -47,7 +47,6 @@ window.addEventListener("scroll", function() {
   }
 });
 
-
 var player;
 function iframe(i) {
   var poster = document.querySelector(".poster-" + i);
