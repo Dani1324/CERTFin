@@ -35,7 +35,7 @@ var swiper = new Swiper(".mySwiper", {
 // Header style settings on mobile devices
 var header = document.querySelector(".header");
 header.style.backgroundColor = "transparent";
-header.style.backdropFilter = "blur(0)";
+header.style.backdropFilter = "none";
 
 window.addEventListener("scroll", function() {
   if (width < 1025 && window.scrollY > 30) {
