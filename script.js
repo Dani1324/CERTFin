@@ -56,6 +56,7 @@ function iframe(i) {
   // Hide the thumbnail and the button
   poster.style.display = "none";
   playButton.style.display = "none";
+  iframe.style.visibility = "visible";
 
   // Play the video
   iframe.src += "&autoplay=1";
