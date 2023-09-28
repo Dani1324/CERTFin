@@ -36,14 +36,17 @@ var swiper = new Swiper(".mySwiper", {
 var header = document.querySelector(".header");
 header.style.backgroundColor = "transparent";
 header.style.backdropFilter = "none";
+header.style.webkitBackdropFilter = "none";
 
 window.addEventListener("scroll", function() {
   if (width < 1025 && window.scrollY > 30) {
     header.style.backgroundColor = "rgba(17, 34, 86, 0.3)";
     header.style.backdropFilter = "blur(0.5rem)";
+    header.style.webkitBackdropFilter = "blur(0.5rem)";
   } else {
     header.style.backgroundColor = "transparent";
     header.style.backdropFilter = "none";
+    header.style.webkitBackdropFilter = "none";
   }
 });
 
