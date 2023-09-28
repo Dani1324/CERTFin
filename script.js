@@ -43,7 +43,7 @@ window.addEventListener("scroll", function() {
     header.style.backdropFilter = "blur(0.5rem)";
   } else {
     header.style.backgroundColor = "transparent";
-    header.style.backdropFilter = "blur(0)";
+    header.style.backdropFilter = "none";
   }
 });
 

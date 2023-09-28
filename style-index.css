@@ -342,9 +342,6 @@ iframe {
   .header {
     width: 80vw;
     padding: 0.3rem 10vw 0.3rem 10vw;
-    backdrop-filter: blur(0.5rem);
-    -webkit-backdrop-filter: blur(0.5rem);
-    background-color: rgba(17, 34, 86, 0.3);
   }
 
   .header .logo {
