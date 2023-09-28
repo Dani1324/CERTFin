@@ -33,7 +33,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var player;
-function iframe(i, id, ev) {
+function iframe(i) {
   // Ottieni i riferimenti agli elementi
   var poster = document.querySelector(".poster-" + i);
   var iframe = document.querySelector(".iframe-" + i);
