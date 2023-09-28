@@ -83,6 +83,7 @@ iframe {
   top: 0;
   left: 0;
   z-index: 100;
+  transition: all 0.15s ease-in-out;
 }
 
 .header .logo {
@@ -130,7 +131,7 @@ iframe {
   width: 100vw;
   justify-content: center;
   padding-bottom: 6rem;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 100), #0f164c);
 }
 
 .video .iframe {
@@ -288,8 +289,8 @@ iframe {
 @media (max-width: 1025px) {
   /* ! General style of the website */
   body {
-    background-image: radial-gradient(100% 12% at 50% 1rem, #0e688c, #0f164c),
-      linear-gradient(0deg, #000 0%, #000 100%);
+    background-image: radial-gradient(100% 25vh at 50% 1rem, #0e688c, #0f164c), linear-gradient(0deg, #000 0%, #000 100%);
+    background-repeat: no-repeat;
   }
 
   h2 {
@@ -387,7 +388,6 @@ iframe {
   .video {
     width: 90vw;
     padding: 0 5vw 6rem 5vw;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0));
   }
 
   .video .iframe {

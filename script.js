@@ -32,9 +32,24 @@ var swiper = new Swiper(".mySwiper", {
   allowTouchMove: false,
 });
 
+// Header style settings on mobile devices
+var header = document.querySelector(".header");
+header.style.backgroundColor = "transparent";
+header.style.backdropFilter = "blur(0)";
+
+window.addEventListener("scroll", function() {
+  if (width < 1025 && window.scrollY > 30) {
+    header.style.backgroundColor = "rgba(17, 34, 86, 0.3)";
+    header.style.backdropFilter = "blur(0.5rem)";
+  } else {
+    header.style.backgroundColor = "transparent";
+    header.style.backdropFilter = "blur(0)";
+  }
+});
+
+
 var player;
 function iframe(i) {
-  // Ottieni i riferimenti agli elementi
   var poster = document.querySelector(".poster-" + i);
   var iframe = document.querySelector(".iframe-" + i);
   var playButton = document.querySelector(".play-button-" + i);
