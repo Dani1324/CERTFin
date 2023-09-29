@@ -255,9 +255,9 @@ iframe {
 
 .middle-line {
   width: 4vw;
-  height: 0.25rem;
+  height: 0.234rem;
   border: 0rem solid #37BFF0;
-  transform: translateY(-0.156rem);
+  transform: translateY(-0.17rem);
   background: #37BFF0;
 }
 
