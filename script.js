@@ -33,7 +33,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // Quiz swiper slider settings
-const quizMoveSlider = document.querySelector('.quizSwiper').swiper;
 var quizSwiper = new Swiper(".myQuizSwiper", {
   pagination: {
     el: ".quizSwiper-pagination",
