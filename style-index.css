@@ -236,6 +236,7 @@ iframe {
 }
 
 .quizSwiper-pagination {
+  width: max-content !important;
   margin: 2rem auto;
   transform: translateX(0) scale(1.5) !important;
 }
@@ -521,11 +522,6 @@ iframe {
     font-size: 1rem;
   }
 
-  .quizSwiper-pagination {
-    margin: 2rem auto;
-    transform: translateX(0) scale(1.5) !important;
-  }
-  
   .line {
     width: 10vw;
     margin: 0;
