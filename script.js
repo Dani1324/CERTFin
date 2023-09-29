@@ -13,7 +13,7 @@ document.querySelectorAll("a.smooth").forEach(function (element) {
   });
 });
 
-// Swiper settings
+// Video swiper slider settings
 const width = window.innerWidth > 0 ? window.innerWidth : screen.width;
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
@@ -31,6 +31,18 @@ var swiper = new Swiper(".mySwiper", {
   simulateTouch: false,
   allowTouchMove: false,
 });
+
+// Quiz swiper slider settings
+const quizMoveSlider = document.querySelector('.quizSwiper').swiper;
+var quizSwiper = new Swiper(".myQuizSwiper", {
+  pagination: {
+    el: ".quizSwiper-pagination",
+    dynamicBullets: true
+  },
+  keyboard: true,
+  allowTouchMove: true,
+});
+
 
 // Header style settings on mobile devices
 var header = document.querySelector(".header");
