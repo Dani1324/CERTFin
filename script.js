@@ -42,12 +42,33 @@ var quizSwiper = new Swiper(".myQuizSwiper", {
   allowTouchMove: true,
 });
 
-var slide;
+// Quiz functioning
+var slide; 
+var trueAnswers = 0; 
+var falseAnswers = 0;
 
-function quiz(q, a) {
-  console.log("Il valore di q è: ", q);
-  console.log("Il valore di a è: ", a);
+function quiz(q, a, answer) {
   quizSwiper.slideTo(q);
+
+  // Reset user answer
+  for (let i = 1; i < 5; i++) {
+    document.querySelector("#question" + q + " #answer" + i + " img").src = "resources/answer-border.svg";
+    document.querySelector("#question" + q + " #answer" + i).removeAttribute("onclick");
+  }
+
+  // Set the green background on the correct answer
+  document.querySelector("#question" + q + " .true img").src = "resources/answer-border-true.svg";
+
+  if (answer == 'false') {
+    // Set the red background on the wrong answer
+    document.querySelector("#question" + q + " #answer" + a + " img").src = "resources/answer-border-false.svg";
+    falseAnswers = falseAnswers + 1;
+  } else {
+    trueAnswers = trueAnswers + 1;
+  }
+
+  console.log(trueAnswers);
+  console.log(falseAnswers);
 };
 
 // Header style settings on mobile devices

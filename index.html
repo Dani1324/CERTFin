@@ -63,9 +63,9 @@
       <div class="quizSwiper myQuizSwiper">
         <div class="swiper-wrapper">
           <!-- Question 1 -->
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="question1">
             <hr class="line">
-            <a onclick="quiz(1, 1)">
+            <a onclick="quiz(1, 1, 'false')" id="answer1">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Qualcuno finge di essere il CEO e richiede un pagamento</p>
@@ -74,7 +74,7 @@
             <hr class="line mobile">
             <hr class="middle-line">
             <hr class="line mobile">
-            <a onclick="quiz(1, 2)">
+            <a onclick="quiz(1, 2, 'true')" id="answer2" class="true">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Un alto dirigente si presenta come nuovo assunto</p>
@@ -82,7 +82,7 @@
             </a>
             <hr class="line">
             <hr class="line">
-            <a onclick="quiz(1, 3)">
+            <a onclick="quiz(1, 3, 'false')" id="answer3">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Il capo regala piccole quote della propria azienda</p>
@@ -91,7 +91,7 @@
             <hr class="line mobile">
             <hr class="middle-line">
             <hr class="line mobile">
-            <a onclick="quiz(1, 4)">
+            <a onclick="quiz(1, 4, 'false')" id="answer4">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Il tuo capo viene truffato da un dipendente</p>
@@ -100,9 +100,9 @@
             <hr class="line">
           </div>
           <!-- Question 2 -->
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="question2">
             <hr class="line">
-            <a onclick="quiz(2, 1)">
+            <a onclick="quiz(2, 1, 'false')" id="answer1">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Qualcuno finge di essere il CEO e richiede un pagamento</p>
@@ -111,7 +111,7 @@
             <hr class="line mobile">
             <hr class="middle-line">
             <hr class="line mobile">
-            <a onclick="quiz(2, 2)">
+            <a onclick="quiz(2, 2, 'false')" id="answer2">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Un alto dirigente si presenta come nuovo assunto</p>
@@ -119,7 +119,7 @@
             </a>
             <hr class="line">
             <hr class="line">
-            <a onclick="quiz(2, 3)">
+            <a onclick="quiz(2, 3, 'false')" id="answer3">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Il capo regala piccole quote della propria azienda</p>
@@ -128,7 +128,7 @@
             <hr class="line mobile">
             <hr class="middle-line">
             <hr class="line mobile">
-            <a onclick="quiz(2, 4)">
+            <a onclick="quiz(2, 4, 'true')" id="answer4" class="true">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Il tuo capo viene truffato da un dipendente</p>
@@ -137,9 +137,9 @@
             <hr class="line">
           </div>
           <!-- Question 3 -->
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="question3">
             <hr class="line">
-            <a onclick="quiz(3, 1)">
+            <a onclick="quiz(3, 1, 'false')" id="answer1">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Qualcuno finge di essere il CEO e richiede un pagamento</p>
@@ -148,7 +148,7 @@
             <hr class="line mobile">
             <hr class="middle-line">
             <hr class="line mobile">
-            <a onclick="quiz(3, 2)">
+            <a onclick="quiz(3, 2, 'false')" id="answer2">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Un alto dirigente si presenta come nuovo assunto</p>
@@ -156,7 +156,7 @@
             </a>
             <hr class="line">
             <hr class="line">
-            <a onclick="quiz(3, 3)">
+            <a onclick="quiz(3, 3, 'true')" id="answer3" class="true">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Il capo regala piccole quote della propria azienda</p>
@@ -165,7 +165,7 @@
             <hr class="line mobile">
             <hr class="middle-line">
             <hr class="line mobile">
-            <a onclick="quiz(3, 4)">
+            <a onclick="quiz(3, 4, 'false')" id="answer4">
               <div class="answer">
                 <img src="resources/answer-border.svg" alt="answer-background">
                 <p>Il tuo capo viene truffato da un dipendente</p>
