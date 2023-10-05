@@ -195,6 +195,9 @@ iframe {
   width: 100%;
   height: 100%;
 }
+.quizSwiper a {
+  color: #fff;
+}
 
 .quizSwiper .swiper-slide {
   text-align: center;

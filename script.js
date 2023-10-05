@@ -42,6 +42,13 @@ var quizSwiper = new Swiper(".myQuizSwiper", {
   allowTouchMove: true,
 });
 
+var slide;
+
+function quiz(q, a) {
+  console.log("Il valore di q è: ", q);
+  console.log("Il valore di a è: ", a);
+  quizSwiper.slideTo(q);
+};
 
 // Header style settings on mobile devices
 var header = document.querySelector(".header");
