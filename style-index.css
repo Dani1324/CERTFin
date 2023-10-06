@@ -589,9 +589,9 @@ iframe {
   .line {
     width: 10vw;
     margin: 0;
-    height: 0.234rem;
+    height: 0.55vw;
     border: 0rem solid #37BFF0;
-    transform: translateY(-0.03rem);
+    transform: translateY(calc(1vw - 0.3rem));
   }
 
   .middle-line {
