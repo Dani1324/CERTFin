@@ -48,7 +48,10 @@ var trueAnswers = 0;
 var falseAnswers = 0;
 
 function quiz(q, a, answer) {
-  quizSwiper.slideTo(q);
+  // Slide to next question
+  setTimeout(function() {
+    quizSwiper.slideTo(q);
+  }, 500);
 
   // Reset user answer
   for (let i = 1; i < 5; i++) {
