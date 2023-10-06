@@ -36,7 +36,6 @@ var swiper = new Swiper(".mySwiper", {
 var quizSwiper = new Swiper(".myQuizSwiper", {
   pagination: {
     el: ".quizSwiper-pagination",
-    dynamicBullets: true
   },
   keyboard: true,
   allowTouchMove: true,
