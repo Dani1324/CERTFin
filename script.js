@@ -1,3 +1,8 @@
+// Reload when device orientation changes
+window.addEventListener('orientationchange', function() {
+  location.reload();
+});
+
 // Smooth scrolling to all .smooth links
 document.querySelectorAll("a.smooth").forEach(function (element) {
   element.addEventListener("click", function (event) {
