@@ -283,7 +283,7 @@ iframe {
   z-index: 2;
 }
 
-.quizResult .result {
+.quizResult #result {
   opacity: 1;
   font-size: 4rem;
   font-weight: 500;
@@ -611,7 +611,7 @@ iframe {
     z-index: 2;
   }
 
-  .quizResult .result {
+  .quizResult #result {
     font-size: 3rem;
     margin-bottom: 2rem;
     margin-top: 1rem;

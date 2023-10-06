@@ -43,8 +43,11 @@ var quizSwiper = new Swiper(".myQuizSwiper", {
 
 // Quiz functioning
 var slide; 
-var trueAnswers = 0; 
-var falseAnswers = 0;
+var wrongAnswers = 0;
+var correctAnswers = 0; 
+var questionsNumber = 3;
+
+document.querySelector(".quizResult").style.display = "none";
 
 function quiz(q, a, answer) {
   // Slide to next question
@@ -64,14 +67,19 @@ function quiz(q, a, answer) {
   if (answer == 'false') {
     // Set the red background on the wrong answer
     document.querySelector("#question" + q + " #answer" + a + " img").src = "resources/answer-border-false.svg";
-    falseAnswers = falseAnswers + 1;
+    wrongAnswers = wrongAnswers + 1;
   } else {
-    trueAnswers = trueAnswers + 1;
-  }
+    correctAnswers = correctAnswers + 1;
+  };
 
-  console.log(trueAnswers);
-  console.log(falseAnswers);
-};
+  // Set the result text in the result section
+  document.querySelector("#result").innerHTML = correctAnswers + "/" + questionsNumber;
+
+  if ( (wrongAnswers + correctAnswers) == questionsNumber){
+    document.querySelector(".quizResult").style.display = "block";
+  };
+}; 
+
 
 // Header style settings on mobile devices
 var header = document.querySelector(".header");
