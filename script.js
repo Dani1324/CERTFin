@@ -105,16 +105,16 @@ window.addEventListener("scroll", function() {
 });
 
 var player;
-function iframe(i) {
+function video(i) {
   var poster = document.querySelector(".poster-" + i);
-  var iframe = document.querySelector(".iframe-" + i);
+  var video = document.querySelector(".video-" + i);
   var playButton = document.querySelector(".play-button-" + i);
 
   // Hide the thumbnail and the button
   poster.style.display = "none";
   playButton.style.display = "none";
-  iframe.style.visibility = "visible";
+  video.style.visibility = "visible";
 
   // Play the video
-  iframe.src += "&autoplay=1";
+  video.play();
 };
